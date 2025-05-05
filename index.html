@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O‘quvchi Ma’lumotlari</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>O‘quvchi Ma’lumotlari</h1>
-        <form action="/submit" method="POST">
+        <form id="studentForm">
             <div class="form-group">
                 <label for="name">Ism va Familiya:</label>
                 <input type="text" id="name" name="name" required placeholder="Ismingiz va familiyangizni kiriting">
@@ -48,43 +47,6 @@
                     <option value="UzCard">UzCard</option>
                     <option value="Visa">Visa</option>
                 </select>
-            </div>
-
-            <div id="humoFields" class="paymentFields">
-                <div class="form-group">
-                    <label for="humoCard">Humo Karta Raqami:</label>
-                    <input type="text" id="humoCard" name="humoCard" placeholder="16 raqamli Humo karta raqami">
-                </div>
-                <div class="form-group">
-                    <label for="humoExpiry">Muddat (oy/yil):</label>
-                    <input type="text" id="humoExpiry" name="humoExpiry" placeholder="OY/YIL">
-                </div>
-            </div>
-
-            <div id="uzcardFields" class="paymentFields">
-                <div class="form-group">
-                    <label for="uzcardNumber">UzCard Karta Raqami:</label>
-                    <input type="text" id="uzcardNumber" name="uzcardNumber" placeholder="16 raqamli UzCard karta raqami">
-                </div>
-                <div class="form-group">
-                    <label for="uzcardExpiry">Muddat (oy/yil):</label>
-                    <input type="text" id="uzcardExpiry" name="uzcardExpiry" placeholder="OY/YIL">
-                </div>
-            </div>
-
-            <div id="visaFields" class="paymentFields">
-                <div class="form-group">
-                    <label for="visaCard">Visa Karta Raqami:</label>
-                    <input type="text" id="visaCard" name="visaCard" placeholder="16 raqamli Visa karta raqami">
-                </div>
-                <div class="form-group">
-                    <label for="visaExpiry">Muddat (oy/yil):</label>
-                    <input type="text" id="visaExpiry" name="visaExpiry" placeholder="OY/YIL">
-                </div>
-                <div class="form-group">
-                    <label for="visaCVV">CVV:</label>
-                    <input type="text" id="visaCVV" name="visaCVV" placeholder="Visa karta CVV raqami">
-                </div>
             </div>
 
             <button type="submit">Yuborish</button>
